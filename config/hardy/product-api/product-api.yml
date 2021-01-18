@@ -29,3 +29,6 @@ feign:
   hystrix:
     enabled: true
 
+test.value: HARD
+
+management.endpoints.web.exposure.include: '*'
