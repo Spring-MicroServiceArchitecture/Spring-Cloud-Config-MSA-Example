@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: home-api
+  cloud:
+    config:
+      name: home-api
+      uri: http://localhost:8888
+      label: master
+
