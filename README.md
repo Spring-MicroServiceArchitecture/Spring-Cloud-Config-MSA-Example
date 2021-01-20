@@ -137,3 +137,46 @@
 ### eureka dashboard (localhost:8761)
 
 ![eureka-dashboard](eureka-dashboard.jpg)
+
+### eureka registry list
+* http://localhost:8761/eureka/apps/{spring.application.name}
+
+```xml
+<application>
+    <name>HOME-API</name>
+    <instance>
+        <instanceId>172.30.1.43:home-api:8081</instanceId>
+        <hostName>172.30.1.43</hostName>
+        <app>HOME-API</app>
+        <ipAddr>172.30.1.43</ipAddr>
+        <status>UP</status>
+        <overriddenstatus>UNKNOWN</overriddenstatus>
+        <port enabled="true">8081</port>
+        <securePort enabled="false">443</securePort>
+        <countryId>1</countryId>
+        <dataCenterInfo class="com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo">
+            <name>MyOwn</name>
+        </dataCenterInfo>
+        <leaseInfo>
+            <renewalIntervalInSecs>30</renewalIntervalInSecs>
+            <durationInSecs>90</durationInSecs>
+            <registrationTimestamp>1611157469862</registrationTimestamp>
+            <lastRenewalTimestamp>1611157469862</lastRenewalTimestamp>
+            <evictionTimestamp>0</evictionTimestamp>
+            <serviceUpTimestamp>1611157469275</serviceUpTimestamp>
+        </leaseInfo>
+        <metadata>
+            <management.port>8081</management.port>
+        </metadata>
+        <homePageUrl>http://172.30.1.43:8081/</homePageUrl>
+        <statusPageUrl>http://172.30.1.43:8081/actuator/info</statusPageUrl>
+        <healthCheckUrl>http://172.30.1.43:8081/actuator/health</healthCheckUrl>
+        <vipAddress>home-api</vipAddress>
+        <secureVipAddress>home-api</secureVipAddress>
+        <isCoordinatingDiscoveryServer>false</isCoordinatingDiscoveryServer>
+        <lastUpdatedTimestamp>1611157469862</lastUpdatedTimestamp>
+        <lastDirtyTimestamp>1611157469233</lastDirtyTimestamp>
+        <actionType>ADDED</actionType>
+    </instance>
+</application>
+```
