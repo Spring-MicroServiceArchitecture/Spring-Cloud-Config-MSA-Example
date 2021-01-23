@@ -6,6 +6,6 @@ spring:
     config:
       server:
         git:
-          uri: file:///Users/groot/config-msa-example/config
+          uri: file:///Users/mingooddev/Desktop/Spring-Cloud-Config-MSA-Example/config
           search-paths: 'hardy/*, hardy/{application}/*'
           clone-on-start: true
